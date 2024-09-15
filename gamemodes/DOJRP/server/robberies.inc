@@ -67,13 +67,13 @@ public OnPlayerRequestRobbery(playerid, actorid)//Hooking does not work...
 {
 	if(GetPlayerJob(playerid) != CIVILIAN_JOB)
 	{
-		SendClientMessage(playerid, ORANGE, "SERVER: You must be a civilian to be able to hold up businesses.");
+		SendClientMessage(playerid, ORANGE, "เซิร์ฟเวอร์: คุณต้องเป็นพลเรือนจึงจะสามารถปล้นได้.");
 		return 0;
 	}
 
 	if(!IsHoldingFirearm(playerid))
 	{
-		SendClientMessage(playerid, ORANGE, "SERVER: You must be holding a firearm to commit a holdup.");
+		SendClientMessage(playerid, ORANGE, "เซิร์ฟเวอร์: คุณต้องถือปืนเพื่อทำการปล้น.");
 		return 0;
 	}
 
@@ -81,7 +81,7 @@ public OnPlayerRequestRobbery(playerid, actorid)//Hooking does not work...
 	{
 		if((gettime() - 300) < GetPlayerLastRobbery(playerid))
 		{
-			SendClientMessage(playerid, RED, "ERROR: Please wait 5 minutes before doing another robbery.");
+			SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรอ 5 นาทีก่อนที่จะทำการปล้นอีกครั้ง.");
 			return 0;
 		}
 	}
@@ -97,15 +97,15 @@ public OnPlayerStartRobbery(playerid, actorid, bool:robbed_recently)//Hooking do
 
 	RobbingData[playerid][robbery_clerkid] = actorid;
 	RobbingData[playerid][robbery_status] = true;
-	
+
 	SetPlayerWantedLevel(playerid, GetPlayerWantedLevel(playerid) + 4);
 	SetPlayerColor(playerid, RED);
 
-	SendClientMessage(playerid, ORANGE, "NOTICE: You are currently holding up the business, wait until you finish.");
+	SendClientMessage(playerid, ORANGE, "ระบบ: คุณกำลังปล้นร้านค้า, โปรดรอจนกว่าคุณจะเสร็จสิ้น.");
 
 	new string[144], name[24];
 	GetPlayerName(playerid, name, sizeof(name));
-	format(string, sizeof(string), "RADIO(/r): Suspect %s (%i) is holding up the business at: %s", name, playerid, ReturnPlayerLocation(playerid));
+	format(string, sizeof(string), "วิทยุ(/r): ผู้ต้องหา %s (%i) กำลังปล้นที่: %s", name, playerid, ReturnPlayerLocation(playerid));
 	return PoliceRadio(ORANGE, string);
 }
 
@@ -124,7 +124,7 @@ public OnPlayerFinishRobbery(playerid, actorid, robbedmoney, type)//Hooking does
 				SetPlayerWantedLevel(playerid, 6);
 				SetPlayerColor(playerid, RED);
 
-				SendClientMessage(playerid, RED, "NOTICE: You have failed to rob the business.");
+				SendClientMessage(playerid, RED, "ระบบ: คุณล้มเหลวในการปล้นร้านค้า.");
 			}
 			else
 			{
@@ -146,12 +146,12 @@ public OnPlayerFinishRobbery(playerid, actorid, robbedmoney, type)//Hooking does
 				SetPlayerStats(playerid, STATS_TYPE_ROBBERIES, GetPlayerStats(playerid, STATS_TYPE_ROBBERIES) + 1);
 
 				new string[128];
-				format(string, sizeof(string), "NOTICE: You have successfully robbed the business for $%i!", robbedmoney);
+				format(string, sizeof(string), "ระบบ: คุณได้ปล้นร้านค้าสำเร็จแล้ว ได้รับเงินจากการปล้นร้านค้า $%i!", robbedmoney);
 				SendClientMessage(playerid, YELLOW, string);
 			}
 			else
 			{
-				SendClientMessage(playerid, RED, "NOTICE: You have failed to rob the business.");
+				SendClientMessage(playerid, RED, "ระบบ: คุณไม่ได้รับเงินจากการปล้นร้านค้า.");
 			}
 		}
 	}
