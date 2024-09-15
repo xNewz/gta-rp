@@ -758,21 +758,21 @@ stock ShowLVListDialog(playerid)
 stock OnPlayerBuyUsedVehicle(playerid, listitem)
 {
 	new query[800], string[200], price = 0, model = 0, count = GetOwnedVehicleCount(playerid), characterid = GetPlayerCharacterID(playerid);
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "SERVER: You must be on foot to be able to purchase a vehicle.");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "เซิร์ฟเวอร์: คุณต้องยืนอยู่บนพื้นเพื่อซื้อรถยนต์.");
 
 	if(GetPlayerVIP(playerid))
 	{
 	  	if(count >= MAX_VIP_VEHICLES)
 	  	{
-	  		format(string, sizeof(string), "ERROR: You can only own a max of x%i vehicle(s) at a time, trade one in first.", MAX_VIP_VEHICLES);
+	  		format(string, sizeof(string), "ล้มเหลว: คุณสามารถเป็นเจ้าของรถยนต์ได้สูงสุด x%i คันต่อครั้ง, กรุณาเปลี่ยนรถก่อน.", MAX_VIP_VEHICLES);
 	  		return SendClientMessage(playerid, RED, string);
 	  	}
 	}
-	else 
+	else
 	{
 		if(count >= MAX_PLAYER_VEHICLES)
 		{
-	  		format(string, sizeof(string), "ERROR: You can only own a max of x%i vehicle(s) at a time, trade one in first.", MAX_PLAYER_VEHICLES);
+	  		format(string, sizeof(string), "ล้มเหลว: คุณสามารถเป็นเจ้าของรถยนต์ได้สูงสุด x%i คันต่อครั้ง, กรุณาเปลี่ยนรถก่อน.", MAX_PLAYER_VEHICLES);
 	  		return SendClientMessage(playerid, RED, string);
 		}
 	}
@@ -826,7 +826,7 @@ stock OnPlayerBuyUsedVehicle(playerid, listitem)
 		}
 	}
 
-	if(GetPlayerMoneyEx(playerid) < price) return SendClientMessage(playerid, RED, "ERROR: You don't have enough money to purchase this vehicle.");
+	if(GetPlayerMoneyEx(playerid) < price) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณมีเงินไม่พอที่จะซื้อรถยนต์นี้.");
 
 	GivePlayerMoney(playerid, -price);
 
@@ -888,13 +888,13 @@ stock OnPlayerBuyUsedVehicle(playerid, listitem)
 stock OnPlayerBuyNewVehicle(playerid, listitem)
 {
 	new query[800], string[200], price = 0, model = 0, count = GetOwnedVehicleCount(playerid), characterid = GetPlayerCharacterID(playerid);
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "SERVER: You must be on foot to be able to purchase a vehicle.");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "เซิร์ฟเวอร์: You must be on foot to be able to purchase a vehicle.");
 
 	if(GetPlayerVIP(playerid))
 	{
 	  	if(count >= MAX_VIP_VEHICLES)
 	  	{
-	  		format(string, sizeof(string), "ERROR: You can only own a max of x%i vehicle(s) at a time, trade one in first.", MAX_VIP_VEHICLES);
+	  		format(string, sizeof(string), "ล้มเหลว: You can only own a max of x%i vehicle(s) at a time, trade one in first.", MAX_VIP_VEHICLES);
 	  		return SendClientMessage(playerid, RED, string);
 	  	}
 	}
@@ -902,7 +902,7 @@ stock OnPlayerBuyNewVehicle(playerid, listitem)
 	{
 		if(count >= MAX_PLAYER_VEHICLES)
 		{
-	  		format(string, sizeof(string), "ERROR: You can only own a max of x%i vehicle(s) at a time, trade one in first.", MAX_PLAYER_VEHICLES);
+	  		format(string, sizeof(string), "ล้มเหลว: You can only own a max of x%i vehicle(s) at a time, trade one in first.", MAX_PLAYER_VEHICLES);
 	  		return SendClientMessage(playerid, RED, string);
 		}
 	}
@@ -956,7 +956,7 @@ stock OnPlayerBuyNewVehicle(playerid, listitem)
 		}
 	}
 
-	if(GetPlayerMoneyEx(playerid) < price) return SendClientMessage(playerid, RED, "ERROR: You don't have enough money to purchase this vehicle.");
+	if(GetPlayerMoneyEx(playerid) < price) return SendClientMessage(playerid, RED, "ล้มเหลว: You don't have enough money to purchase this vehicle.");
 
 	GivePlayerMoney(playerid, -price);
 
@@ -1018,21 +1018,21 @@ stock OnPlayerBuyNewVehicle(playerid, listitem)
 stock OnPlayerBuySpecialVehicle(playerid, listitem)
 {
 	new query[800], string[200], price = 0, model = 0, count = GetOwnedVehicleCount(playerid), characterid = GetPlayerCharacterID(playerid);
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "SERVER: You must be on foot to be able to purchase a vehicle.");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "เซิร์ฟเวอร์: You must be on foot to be able to purchase a vehicle.");
 
 	if(GetPlayerVIP(playerid))
 	{
 	  	if(count >= MAX_VIP_VEHICLES)
 	  	{
-	  		format(string, sizeof(string), "ERROR: You can only own a max of x%i vehicle(s) at a time, trade one in first.", MAX_VIP_VEHICLES);
+	  		format(string, sizeof(string), "ล้มเหลว: You can only own a max of x%i vehicle(s) at a time, trade one in first.", MAX_VIP_VEHICLES);
 	  		return SendClientMessage(playerid, RED, string);
 	  	}
 	}
-	else 
+	else
 	{
 		if(count >= MAX_PLAYER_VEHICLES)
 		{
-	  		format(string, sizeof(string), "ERROR: You can only own a max of x%i vehicle(s) at a time, trade one in first.", MAX_PLAYER_VEHICLES);
+	  		format(string, sizeof(string), "ล้มเหลว: You can only own a max of x%i vehicle(s) at a time, trade one in first.", MAX_PLAYER_VEHICLES);
 	  		return SendClientMessage(playerid, RED, string);
 		}
 	}
@@ -1086,7 +1086,7 @@ stock OnPlayerBuySpecialVehicle(playerid, listitem)
 		}
 	}
 
-	if(GetPlayerMoneyEx(playerid) < price) return SendClientMessage(playerid, RED, "ERROR: You don't have enough money to purchase this vehicle.");
+	if(GetPlayerMoneyEx(playerid) < price) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณมีเงินไม่พอที่จะซื้อยานพาหนะนี้.");
 
 	GivePlayerMoney(playerid, -price);
 
@@ -1167,7 +1167,7 @@ stock OnPlayerTradeInVehicle(playerid)
 
 		GetVehicleModelName(VehicleData[vehicleid][vehicle_model], name, sizeof(name));
 
-		format(string, sizeof(string), "SERVER: You have just traded in your %s for: $%i", name, cash);
+		format(string, sizeof(string), "เซิร์ฟเวอร์: You have just traded in your %s for: $%i", name, cash);
 		SendClientMessage(playerid, WHITE, string);
 	}
 	return 1;
@@ -1240,7 +1240,7 @@ hook OnPlayerStateChange(playerid, newstate, oldstate)
         if(!IsVehicleBicycle(vehicleid) && VehicleData[vehicleid][vehicle_fuel] <= 0)
 		{
 		    RemovePlayerFromVehicle(playerid);
-			return SendClientMessage(playerid, RED, "ERROR: This vehicle is out of fuel.");
+			return SendClientMessage(playerid, RED, "ล้มเหลว: ยานพาหนะน้ำมันหมดแล้ว.");
 		}
 
 		//Restricted Vehicle Check
@@ -1252,7 +1252,7 @@ hook OnPlayerStateChange(playerid, newstate, oldstate)
 				if(job != POLICE_JOB && job != CIA_JOB && job != ARMY_JOB)
 			    {
 			    	RemovePlayerFromVehicle(playerid);
-					return SendClientMessage(playerid, RED, "ERROR: Only law enforcement can use this vehicle.");
+					return SendClientMessage(playerid, RED, "ล้มเหลว: เฉพาะเจ้าหน้าที่ รัฐบาลเท่านั้นที่สามารถใช้ยานพาหนะนี้ได้.");
 				}
 			}
 			case 490://CIA Vehicles
@@ -1260,7 +1260,7 @@ hook OnPlayerStateChange(playerid, newstate, oldstate)
 				if(job != POLICE_JOB && job != CIA_JOB && job != ARMY_JOB)
 			    {
 			    	RemovePlayerFromVehicle(playerid);
-					return SendClientMessage(playerid, RED, "ERROR: Only law enforcement can use this vehicle.");
+					return SendClientMessage(playerid, RED, "ล้มเหลว: เฉพาะเจ้าหน้าที่ รัฐบาลเท่านั้นที่สามารถใช้ยานพาหนะนี้ได้.");
 				}
 			}
 			case 425, 432, 433, 470, 520://Army Vehicles
@@ -1268,7 +1268,7 @@ hook OnPlayerStateChange(playerid, newstate, oldstate)
 				if(job != ARMY_JOB)
 			    {
 			    	RemovePlayerFromVehicle(playerid);
-					return SendClientMessage(playerid, RED, "ERROR: Only army soldiers can use this vehicle.");
+					return SendClientMessage(playerid, RED, "ล้มเหลว: เฉพาะเจ้าหน้าที่ ทหารเท่านั้นที่สามารถใช้ยานพาหนะนี้ได้.");
 				}
 			}
 			case 416://Hospital Vehicles
@@ -1276,7 +1276,7 @@ hook OnPlayerStateChange(playerid, newstate, oldstate)
 				if(job != EMS_JOB)
 			    {
 			    	RemovePlayerFromVehicle(playerid);
-					return SendClientMessage(playerid, RED, "ERROR: Only paramedics can use this vehicle.");
+					return SendClientMessage(playerid, RED, "ล้มเหลว: เฉพาะเจ้าหน้าที่ รพ.เท่านั้นที่สามารถใช้ยานพาหนะนี้ได้.");
 				}
 			}
 			case 407://Fire Station Vehicles
@@ -1284,7 +1284,7 @@ hook OnPlayerStateChange(playerid, newstate, oldstate)
 				if(job != FIRE_JOB)
 			    {
 			    	RemovePlayerFromVehicle(playerid);
-					return SendClientMessage(playerid, RED, "ERROR: Only firefighters can use this vehicle.");
+					return SendClientMessage(playerid, RED, "ล้มเหลว: เฉพาะเจ้าหน้าที่ ดับเพลิงเท่านั้นที่สามารถใช้ยานพาหนะนี้ได้.");
 				}
 				else
 				{
@@ -1297,7 +1297,7 @@ hook OnPlayerStateChange(playerid, newstate, oldstate)
 				if(job != TRUCKER_JOB)
 			    {
 			    	RemovePlayerFromVehicle(playerid);
-					return SendClientMessage(playerid, RED, "ERROR: Only truck drivers can use this vehicle.");
+					return SendClientMessage(playerid, RED, "ล้มเหลว: เฉพาะคนขับรถบรรทุกเท่านั้นที่สามารถใช้ยานพาหนะนี้ได้.");
 				}
 			}
 			case 519, 553, 577, 593://Planes
@@ -1305,7 +1305,7 @@ hook OnPlayerStateChange(playerid, newstate, oldstate)
 				if(job != PILOT_JOB)
 			    {
 			    	RemovePlayerFromVehicle(playerid);
-					return SendClientMessage(playerid, RED, "ERROR: Only pilots can use this vehicle.");
+					return SendClientMessage(playerid, RED, "ล้มเหลว: เฉพาะนักบินเท่านั้นที่สามารถใช้ยานพาหนะนี้ได้.");
 				}
 			}
 		}
@@ -1795,7 +1795,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 								}
 							}
 						}
-						return SendClientMessage(playerid, RED, "ERROR: You must be next to an owned vehicle to trade it in.");
+						return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องอยู่ใกล้ยานพาหนะที่คุณเป็นเจ้าของเพื่อแลกเปลี่ยน.");
 					}
 				}
 			}
@@ -1830,7 +1830,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 								}
 							}
 						}
-						return SendClientMessage(playerid, RED, "ERROR: You must be next to an owned vehicle to trade it in.");
+						return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องอยู่ใกล้ยานพาหนะที่คุณเป็นเจ้าของเพื่อแลกเปลี่ยน.");
 					}
 				}
 			}
@@ -1865,7 +1865,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 								}
 							}
 						}
-						return SendClientMessage(playerid, RED, "ERROR: You must be next to an owned vehicle to trade it in.");
+						return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องอยู่ใกล้ยานพาหนะที่คุณเป็นเจ้าของเพื่อแลกเปลี่ยน.");
 					}
 				}
 			}
@@ -1936,7 +1936,7 @@ task OnVehicleUseFuel[30000]()
 				{
 					if(driverid != INVALID_PLAYER_ID)
 					{
-						SendClientMessage(driverid, ORANGE, "NOTICE: This vehicle is almost out of fuel.");
+						SendClientMessage(driverid, ORANGE, "ระบบ: ยานพาหนะคันนี้ น้ำมันเหลือน้อย.");
 					}
 				}
 	        }
@@ -1951,7 +1951,7 @@ task OnVehicleUseFuel[30000]()
 				if(driverid != INVALID_PLAYER_ID)
 				{
 		    		RemovePlayerFromVehicle(driverid);
-					SendClientMessage(driverid, RED, "ERROR: This vehicle is out of fuel.");
+					SendClientMessage(driverid, RED, "ล้มเหลว: ยานพาหนะนี้หมดน้ำมันแล้ว.");
 				}
 	        }
         }
@@ -2006,14 +2006,14 @@ YCMD:engine(playerid, params[], help)
 
 YCMD:lights(playerid, params[], help)
 {
-	if(!IsPlayerInAnyVehicle(playerid) || GetPlayerState(playerid) != PLAYER_STATE_DRIVER) return SendClientMessage(playerid, RED, "ERROR: You must be in the drivers seat of a vehicle to toggle the lights.");
+	if(!IsPlayerInAnyVehicle(playerid) || GetPlayerState(playerid) != PLAYER_STATE_DRIVER) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องเป็นคนขับยานพาหนะ ถึงสามารถเปิดหรือปิดไฟยานพาหนะได้.");
 
 	new vehicleid = GetPlayerVehicleID(playerid);
-	if(IsVehicleBicycle(vehicleid)) return SendClientMessage(playerid, RED, "ERROR: This bicycle does not have any lights.");
+	if(IsVehicleBicycle(vehicleid)) return SendClientMessage(playerid, RED, "ล้มเหลว: จักรยานนี้ไม่มีไฟ.");
 
 	new engine, lights, alarm, doors, bonnet, boot, objective;
 	GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
-	if(engine == VEHICLE_PARAMS_OFF) return SendClientMessage(playerid, RED, "ERROR: The engine must be on to be able to toggle the lights.");
+	if(engine == VEHICLE_PARAMS_OFF) return SendClientMessage(playerid, RED, "ล้มเหลว: เครื่องยนต์ต้องสตาร์ทก่อน เพื่อเปิดหรือปิดไฟยานพาหนะ.");
 
 	if(lights == VEHICLE_PARAMS_OFF)
 	{
@@ -2024,7 +2024,7 @@ YCMD:lights(playerid, params[], help)
 		{
 			if(IsPlayerInRangeOfPoint(i, 10.0, pos[0], pos[1], pos[2]))
 			{
-				format(string, sizeof(string), "** %s turns on their lights...", name);
+				format(string, sizeof(string), "** %s เปิดไฟยานพาหนะ...", name);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -2040,7 +2040,7 @@ YCMD:lights(playerid, params[], help)
 		{
 			if(IsPlayerInRangeOfPoint(i, 10.0, pos[0], pos[1], pos[2]))
 			{
-				format(string, sizeof(string), "** %s turns off their lights...", name);
+				format(string, sizeof(string), "** %s ปิดไฟยานพาหนะ...", name);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -2053,7 +2053,7 @@ YCMD:lights(playerid, params[], help)
 YCMD:trunk(playerid, params[], help)
 {
     new vehicleid = GetNearestVehicle(playerid);
-    if(vehicleid == INVALID_VEHICLE_ID) return SendClientMessage(playerid, RED, "ERROR: You must be next to a vehicle to use this command.");
+    if(vehicleid == INVALID_VEHICLE_ID) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องอยู่ใกล้ยานพาหนะเพื่อใช้คำสั่งนี้.");
 
 	new engine, lights, alarm, doors, bonnet, boot, objective;
 	GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
@@ -2072,7 +2072,7 @@ YCMD:trunk(playerid, params[], help)
 YCMD:hood(playerid, params[], help)
 {
     new vehicleid = GetNearestVehicle(playerid);
-    if(vehicleid == INVALID_VEHICLE_ID) return SendClientMessage(playerid, RED, "ERROR: You must be next to a vehicle to use this command.");
+    if(vehicleid == INVALID_VEHICLE_ID) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องอยู่ใกล้ยานพาหนะเพื่อใช้คำสั่งนี้.");
 
 	new engine, lights, alarm, doors, bonnet, boot, objective;
 	GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
@@ -2091,7 +2091,7 @@ YCMD:hood(playerid, params[], help)
 YCMD:alarm(playerid, params[], help)
 {
     new vehicleid = GetNearestVehicle(playerid);
-    if(vehicleid == INVALID_VEHICLE_ID) return SendClientMessage(playerid, RED, "ERROR: You must be next to a vehicle to use this command.");
+    if(vehicleid == INVALID_VEHICLE_ID) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องอยู่ใกล้ยานพาหนะเพื่อใช้คำสั่งนี้.");
 
 	new engine, lights, alarm, doors, bonnet, boot, objective;
 	GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
@@ -2110,7 +2110,7 @@ YCMD:alarm(playerid, params[], help)
 YCMD:park(playerid, params[], help)
 {
 	new vehicleid = GetPlayerVehicleID(playerid), Float:pos[4], string[128], name[24], characterid = GetPlayerCharacterID(playerid);
-	if(!IsPlayerInAnyVehicle(playerid) || characterid != GetVehicleCharacterID(vehicleid)) return SendClientMessage(playerid, RED, "ERROR: You must be in a vehicle you own to use this command.");
+	if(!IsPlayerInAnyVehicle(playerid) || characterid != GetVehicleCharacterID(vehicleid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องอยู่ในยานพาหนะของคุณ เพื่อจอดยานพาหนะ.");
 
 	GetVehiclePos(vehicleid, pos[0], pos[1], pos[2]);
 	GetVehicleZAngle(vehicleid, pos[3]);
@@ -2127,7 +2127,7 @@ YCMD:park(playerid, params[], help)
 	{
 		if(IsPlayerInRangeOfPoint(i, 10.0, pos[0], pos[1], pos[2]))
 	  	{
-			format(string, sizeof(string), "** %s parks their vehicle...", name);
+			format(string, sizeof(string), "** %s จอดยานพาหนะของตน...", name);
 	     	SendClientMessage(i, GREY, string);
 	    }
 	}
@@ -2140,12 +2140,12 @@ YCMD:lock(playerid, params[], help)
     if(IsPlayerInAnyVehicle(playerid) && (GetPlayerState(playerid) == PLAYER_STATE_DRIVER || GetPlayerState(playerid) == PLAYER_STATE_PASSENGER))
     {
     	vehicleid = GetPlayerVehicleID(playerid);
-    	if(characterid != GetVehicleCharacterID(vehicleid)) return SendClientMessage(playerid, RED, "ERROR: You can only lock vehicles you own.");
+    	if(characterid != GetVehicleCharacterID(vehicleid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถล็อคยานพาหนะที่ไม่ใช่ของคุณได้.");
     }
     else
     {
     	vehicleid = GetNearestVehicle(playerid);
-	    if(vehicleid == INVALID_VEHICLE_ID || characterid != GetVehicleCharacterID(vehicleid)) return SendClientMessage(playerid, RED, "ERROR: You must be next to a vehicle you own to use this command.");
+	    if(vehicleid == INVALID_VEHICLE_ID || characterid != GetVehicleCharacterID(vehicleid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องอยู่ใกล้ยานพาหนะที่คุณเป็นเจ้าของเพื่อใช้คำสั่งนี้.");
     }
 
 	new engine, lights, alarm, doors, bonnet, boot, objective;
@@ -2163,8 +2163,8 @@ YCMD:lock(playerid, params[], help)
 		{
 		  	if(IsPlayerInRangeOfPoint(i, 10.0, pos[0], pos[1], pos[2]))
 		 	{
-				format(string, sizeof(string), "** %s locks their vehicle...", name);
-		    	SendClientMessage(i, GREY, string);
+				format(string, sizeof(string), "** %s ล็อคยานพาหนะของตน...", name);
+		     	SendClientMessage(i, GREY, string);
 		 	}
 		}
 		return 1;
@@ -2178,7 +2178,7 @@ YCMD:lock(playerid, params[], help)
 		{
 		 	if(IsPlayerInRangeOfPoint(i, 10.0, pos[0], pos[1], pos[2]))
 		 	{
-				format(string, sizeof(string), "** %s unlocks their vehicle...", name);
+				format(string, sizeof(string), "** %s ปลดล็อคยานพาหนะของตน...", name);
 		     	SendClientMessage(i, GREY, string);
 		 	}
 		}
@@ -2191,23 +2191,23 @@ YCMD:torch(playerid, params[], help)
 	new string[128], Float:health, vehicleid = GetNearestVehicle(playerid), slot = CheckInventoryForItem(playerid, JERRYCAN_MODEL);
     if(!GetPlayerVIP(playerid) && GetPlayerScore(playerid) < MIN_SCORE_TORCH_VEHICLES)
     {
-    	format(string, sizeof(string), "ERROR: You need at least %i score to torch vehicles.", MIN_SCORE_TORCH_VEHICLES);
+    	format(string, sizeof(string), "ล้มเหลว: คุณต้องมีคะแนนอย่างน้อย %i เพื่อจุดไฟยานพาหนะ.", MIN_SCORE_TORCH_VEHICLES);
     	return SendClientMessage(playerid, RED, string);
     }
-    if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use this command.");
-    if(vehicleid == INVALID_VEHICLE_ID) return SendClientMessage(playerid, RED, "ERROR: You must be next to a vehicle to use this command.");
-    if(VehicleData[vehicleid][vehicle_owned] == true) return SendClientMessage(playerid, RED, "ERROR: You cannot torch owned vehicles.");
-    if(GetVehicleSpeed(vehicleid) > 0) return SendClientMessage(playerid, RED, "ERROR: You cannot torch moving vehicles.");
+    if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องอยู่บนพื้นเพื่อใช้คำสั่งนี้.");
+    if(vehicleid == INVALID_VEHICLE_ID) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องอยู่ใกล้ยานพาหนะเพื่อใช้คำสั่งนี้.");
+    if(VehicleData[vehicleid][vehicle_owned] == true) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถจุดไฟยานพาหนะของคุณเองได้.");
+    if(GetVehicleSpeed(vehicleid) > 0) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่จุดไฟยานพาหนะที่กำลังเคลื่อนที่ได้.");
 
     if(GetPlayerJob(playerid) != CIVILIAN_JOB)
     {
-    	format(string, sizeof(string), "ERROR: You cannot torch vehicles while you are clocked on as a: %s", ReturnPlayerJob(playerid));
+    	format(string, sizeof(string), "ล้มเหลว: คุณไม่สามารถจุดไฟยานพาหนะขณะที่คุณกำลังทำหน้าที่เป็น: %s", ReturnPlayerJob(playerid));
 		return SendClientMessage(playerid, RED, string);
 	}
-	if(slot == 0) return SendClientMessage(playerid, RED, "ERROR: You need to have a Jerrycan to be able to torch the vehicle.");
-	
+	if(slot == 0) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องมีเท่งน้ำมันเพื่อจุดไฟยานพาหนะ.");
+
 	GetVehicleHealth(vehicleid, health);
-	if(health < 250) return SendClientMessage(playerid, RED, "ERROR: That vehicle is already on fire and is about to explode.");
+	if(health < 250) return SendClientMessage(playerid, RED, "ล้มเหลว: ยานพาหนะนี้มีความเสียหายมากเกินไปเพื่อจุดไฟ.");
 
 	RemoveItemFromInventory(playerid, slot, 1, false);
 
@@ -2230,7 +2230,7 @@ YCMD:findcars(playerid, params[], help)
 				if(pos[0] >= sa_zones[z][zone_area][0] && pos[0] <= sa_zones[z][zone_area][3] && pos[1] >= sa_zones[z][zone_area][1] && pos[1] <= sa_zones[z][zone_area][4])
 				{
 					new Float:dist = GetPlayerDistanceFromPoint(playerid, pos[0], pos[1], pos[2]);
-					format(string, sizeof(string), "SERVER: Your %s is located in: %s (%0.2f Metres Away)", name, sa_zones[z][zone_name], dist);
+					format(string, sizeof(string), "เซิร์ฟเวอร์: ยานพาหนะของคุณ %s อยู่ที่: %s (%0.2f เมตร)", name, sa_zones[z][zone_name], dist);
 					break;
 				}
 			}
@@ -2241,7 +2241,7 @@ YCMD:findcars(playerid, params[], help)
 
 	if(count == 0)
 	{
-		SendClientMessage(playerid, RED, "ERROR: You don't own any vehicles.");
+		SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่ได้เป็นเจ้าของยานพาหนะใด ๆ");
 	}
 	return 1;
 }
