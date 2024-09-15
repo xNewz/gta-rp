@@ -67,14 +67,14 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 YCMD:laugh(playerid, params[], help)
 {
     new Float:pos[3], string[128], name1[24], name2[24], targetid = GetClosestPlayerID(playerid, 5.0);
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "RAPPING", "Laugh_01", 4.1, 0, 0, 0, 0, 0);
@@ -89,12 +89,12 @@ YCMD:laugh(playerid, params[], help)
    			if(targetid != INVALID_PLAYER_ID)
 			{
     			GetPlayerName(targetid, name2, sizeof(name2));
-   				format(string, sizeof(string), "** %s laughs at %s...", name1, name2);
+   				format(string, sizeof(string), "** %s ขำให้กับ %s...", name1, name2);
 				SendClientMessage(i, GREY, string);
 			}
 			else
 			{
-   				format(string, sizeof(string), "** %s laughs...", name1);
+   				format(string, sizeof(string), "** %s ขำ...", name1);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -105,14 +105,14 @@ YCMD:laugh(playerid, params[], help)
 YCMD:piss(playerid, params[], help)
 {
     new Float:pos[3], string[128], name1[24], name2[24], targetid = GetClosestPlayerID(playerid, 5.0);
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     SetPlayerSpecialAction(playerid, 68);
@@ -127,12 +127,12 @@ YCMD:piss(playerid, params[], help)
    			if(targetid != INVALID_PLAYER_ID)
 			{
     			GetPlayerName(targetid, name2, sizeof(name2));
-   				format(string, sizeof(string), "** %s pisses on %s...", name1, name2);
+   				format(string, sizeof(string), "** %s ฉี่ใส่ %s...", name1, name2);
 				SendClientMessage(i, GREY, string);
 			}
 			else
 			{
-   				format(string, sizeof(string), "** %s takes a piss...", name1);
+   				format(string, sizeof(string), "** %s กำลังฉี่...", name1);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -143,14 +143,14 @@ YCMD:piss(playerid, params[], help)
 YCMD:chat(playerid, params[], help)
 {
     new Float:pos[3], string[128], name1[24], name2[24], targetid = GetClosestPlayerID(playerid, 5.0);
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "PED", "IDLE_chat", 4.1, 1, 1, 1, 1, 1);
@@ -165,12 +165,12 @@ YCMD:chat(playerid, params[], help)
    			if(targetid != INVALID_PLAYER_ID)
 			{
     			GetPlayerName(targetid, name2, sizeof(name2));
-   				format(string, sizeof(string), "** %s chats with %s...", name1, name2);
+   				format(string, sizeof(string), "** %s คุยกับ %s...", name1, name2);
 				SendClientMessage(i, GREY, string);
 			}
 			else
 			{
-   				format(string, sizeof(string), "** %s chats with themselves...", name1);
+   				format(string, sizeof(string), "** %s คุยกับตัวเอง...", name1);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -181,14 +181,14 @@ YCMD:chat(playerid, params[], help)
 YCMD:fucku(playerid, params[], help)
 {
     new Float:pos[3], string[128], name1[24], name2[24], targetid = GetClosestPlayerID(playerid, 5.0);
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "PED", "fucku", 4.1, 0, 1, 1, 1, 1);
@@ -203,12 +203,12 @@ YCMD:fucku(playerid, params[], help)
    			if(targetid != INVALID_PLAYER_ID)
 			{
     			GetPlayerName(targetid, name2, sizeof(name2));
-   				format(string, sizeof(string), "** %s tells %s to get fucked...", name1, name2);
+   				format(string, sizeof(string), "** %s บอก %s ว่าไปตายซ่ะ....", name1, name2);
 				SendClientMessage(i, GREY, string);
 			}
 			else
 			{
-   				format(string, sizeof(string), "** %s says fuck you...", name1);
+   				format(string, sizeof(string), "** %s พูดว่า ควย...", name1);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -219,14 +219,14 @@ YCMD:fucku(playerid, params[], help)
 YCMD:vomit(playerid, params[], help)
 {
     new Float:pos[3], string[128], name1[24], name2[24], targetid = GetClosestPlayerID(playerid, 5.0);
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "FOOD", "EAT_Vomit_P", 4.1, 0, 0, 0, 0, 0);
@@ -241,12 +241,12 @@ YCMD:vomit(playerid, params[], help)
    			if(targetid != INVALID_PLAYER_ID)
 			{
     			GetPlayerName(targetid, name2, sizeof(name2));
-   				format(string, sizeof(string), "** %s vomits all over %s...", name1, name2);
+   				format(string, sizeof(string), "** %s อาเจียนไปทั่วตัวของ %s...", name1, name2);
 				SendClientMessage(i, GREY, string);
 			}
 			else
 			{
-   				format(string, sizeof(string), "** %s vomits...", name1);
+   				format(string, sizeof(string), "** %s อาเจียน...", name1);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -257,14 +257,14 @@ YCMD:vomit(playerid, params[], help)
 YCMD:slapass(playerid, params[], help)
 {
     new Float:pos[3], string[128], name1[24], name2[24], targetid = GetClosestPlayerID(playerid, 5.0);
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "SWEET", "sweet_ass_slap", 4.1, 0, 0, 0, 0, 0);
@@ -279,12 +279,12 @@ YCMD:slapass(playerid, params[], help)
    			if(targetid != INVALID_PLAYER_ID)
 			{
     			GetPlayerName(targetid, name2, sizeof(name2));
-   				format(string, sizeof(string), "** %s slaps %s's ass...", name1, name2);
+   				format(string, sizeof(string), "** %s ตบตูดของ %s", name1, name2);
 				SendClientMessage(i, GREY, string);
 			}
 			else
 			{
-   				format(string, sizeof(string), "** %s slaps their own ass...", name1);
+   				format(string, sizeof(string), "** %s ตบตูดตัวเอง...", name1);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -295,14 +295,14 @@ YCMD:slapass(playerid, params[], help)
 YCMD:wave(playerid, params[], help)
 {
     new Float:pos[3], string[128], name1[24], name2[24], targetid = GetClosestPlayerID(playerid, 5.0);
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "ON_LOOKERS", "wave_loop", 4.0, 1, 0, 0, 0, 0);
@@ -317,12 +317,12 @@ YCMD:wave(playerid, params[], help)
    			if(targetid != INVALID_PLAYER_ID)
 			{
     			GetPlayerName(targetid, name2, sizeof(name2));
-   				format(string, sizeof(string), "** %s waves at %s...", name1, name2);
+   				format(string, sizeof(string), "** %s โบกมือให้กับ %s...", name1, name2);
 				SendClientMessage(i, GREY, string);
 			}
 			else
 			{
-   				format(string, sizeof(string), "** %s waves at nobody...", name1);
+   				format(string, sizeof(string), "** %s โบกมือ...", name1);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -333,14 +333,14 @@ YCMD:wave(playerid, params[], help)
 YCMD:deal(playerid, params[], help)
 {
     new Float:pos[3], string[128], name1[24], name2[24], targetid = GetClosestPlayerID(playerid, 5.0);
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "DEALER", "DEALER_DEAL", 4.1, 0, 0, 0, 0, 0);
@@ -355,12 +355,12 @@ YCMD:deal(playerid, params[], help)
    			if(targetid != INVALID_PLAYER_ID)
 			{
     			GetPlayerName(targetid, name2, sizeof(name2));
-   				format(string, sizeof(string), "** %s makes a deal with %s...", name1, name2);
+   				format(string, sizeof(string), "** %s ทำการดีลกับ %s...", name1, name2);
 				SendClientMessage(i, GREY, string);
 			}
 			else
 			{
-   				format(string, sizeof(string), "** %s makes a deal with nobody...", name1);
+   				format(string, sizeof(string), "** %s ทำการดีลกับตัวเอง...", name1);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -371,14 +371,14 @@ YCMD:deal(playerid, params[], help)
 YCMD:cry(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "GRAVEYARD", "mrnF_loop", 4.1, 0, 0, 0, 0, 0);
@@ -390,7 +390,7 @@ YCMD:cry(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s cries...", name);
+   			format(string, sizeof(string), "** %s ร้องไห้...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -400,14 +400,14 @@ YCMD:cry(playerid, params[], help)
 YCMD:handsup(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     SetPlayerSpecialAction(playerid, SPECIAL_ACTION_HANDSUP);
@@ -419,7 +419,7 @@ YCMD:handsup(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s puts their hands up...", name);
+   			format(string, sizeof(string), "** %s ชูมือของตัวเองขึ้น...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -429,14 +429,14 @@ YCMD:handsup(playerid, params[], help)
 YCMD:crack(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "CRACK", "crckdeth2", 4.1, 1, 0, 0, 0, 0);
@@ -448,7 +448,7 @@ YCMD:crack(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s overdoses on crack...", name);
+   			format(string, sizeof(string), "** %s ใช้ยาเกินขนาด...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -458,14 +458,14 @@ YCMD:crack(playerid, params[], help)
 YCMD:smoke(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "SMOKING", "M_smklean_loop", 4.1, 1, 0, 0, 0, 0);
@@ -477,7 +477,7 @@ YCMD:smoke(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s puffs on a cigarette...", name);
+   			format(string, sizeof(string), "** %s หยิบบุหรี่ขึ้นมาสูบ...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -487,14 +487,14 @@ YCMD:smoke(playerid, params[], help)
 YCMD:gsit(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "BEACH", "ParkSit_M_loop", 4.1, 1, 0, 0, 0, 0);
@@ -506,7 +506,7 @@ YCMD:gsit(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s sits on the ground...", name);
+   			format(string, sizeof(string), "** %s นั่งลงที่พื้น...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -516,14 +516,14 @@ YCMD:gsit(playerid, params[], help)
 YCMD:sit(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "PED", "SEAT_idle", 4.1, 1, 0, 0, 0, 0);
@@ -535,7 +535,7 @@ YCMD:sit(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s sits down...", name);
+   			format(string, sizeof(string), "** %s นั่งลง...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -545,14 +545,14 @@ YCMD:sit(playerid, params[], help)
 YCMD:taichi(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "PARK", "Tai_Chi_Loop", 4.1, 1, 0, 0, 0, 0);
@@ -564,7 +564,7 @@ YCMD:taichi(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s performs taichi...", name);
+   			format(string, sizeof(string), "** %s แสดงไทเก็ก...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -574,14 +574,14 @@ YCMD:taichi(playerid, params[], help)
 YCMD:lay(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "BEACH", "bather", 4.1, 1, 0, 0, 0, 0);
@@ -593,7 +593,7 @@ YCMD:lay(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s lays down...", name);
+   			format(string, sizeof(string), "** %s นอนลง...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -603,14 +603,14 @@ YCMD:lay(playerid, params[], help)
 YCMD:aim(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "PED", "gang_gunstand", 4.1, 1, 0, 0, 0, 0);
@@ -622,7 +622,7 @@ YCMD:aim(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s takes aim...", name);
+   			format(string, sizeof(string), "** %s กำลังชี้...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -632,14 +632,14 @@ YCMD:aim(playerid, params[], help)
 YCMD:relax(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "BEACH", "Lay_BLoop", 4.1, 1, 0, 0, 0, 0);
@@ -651,7 +651,7 @@ YCMD:relax(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s relaxes...", name);
+   			format(string, sizeof(string), "** %s ผ่อนคลาย...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -661,14 +661,14 @@ YCMD:relax(playerid, params[], help)
 YCMD:cpr(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24];
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     ApplyAnimation(playerid, "MEDIC", "CPR", 4.1, 1, 0, 0, 0, 0);
@@ -680,7 +680,7 @@ YCMD:cpr(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s performs CPR...", name);
+   			format(string, sizeof(string), "** %s ทำท่า CPR...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
@@ -690,17 +690,17 @@ YCMD:cpr(playerid, params[], help)
 YCMD:dance(playerid, params[], help)
 {
     new Float:pos[3], string[128], name[24], style;
-    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ERROR: Please wait 4 seconds before using an animation command again.");
+    if((gettime() - 4) < GetTimerStatus(playerid, TIMER_TYPE_ANIM)) return SendClientMessage(playerid, RED, "ล้มเหลว: โปรดรออีก 4 วินาทีก่อนที่จะใช้คำสั่งอีกครั้ง");
     SetTimerStatus(playerid, TIMER_TYPE_ANIM, gettime());
 
-    if(sscanf(params, "d", style)) return SendClientMessage(playerid, RED, "USAGE: /dance [1-4]");
-	if(style < 1 || style > 4) return SendClientMessage(playerid, RED, "ERROR: Invalid style. Must be from: 1-4");
+    if(sscanf(params, "d", style)) return SendClientMessage(playerid, RED, "วิธีใช้: /dance [1-4]");
+	if(style < 1 || style > 4) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องใส่ค่าระหว่าง 1 ถึง 4 เท่านั้น");
 
-    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop your current animation before using another.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ERROR: Press ENTER to stop smoking weed before using an animation.");
-	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ERROR: You must be on foot to use animations.");
-    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are cuffed.");
-	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ERROR: You cannot use animations while you are injured/dead.");
+    if(GetAnimationStatus(playerid) == true) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการเล่นอนิเมชั่นปัจจุบันก่อนที่จะใช้อันอื่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_SMOKE_CIGGY) return SendClientMessage(playerid, RED, "ล้มเหลว: กดปุ่ม ENTER เพื่อหยุดการสูบบุหรี่ก่อนที่จะใช้อนิเมชั่น");
+	if(GetPlayerState(playerid) != PLAYER_STATE_ONFOOT) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องยืนอยู่บนพื้นเพื่อใช้อนิเมชั่น");
+    if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_CUFFED) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่ถูกจับกุมได้");
+	if(IsPlayerInjured(playerid)) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณไม่สามารถใช้อนิเมชั่นในขณะที่บาดเจ็บ/ตายได้");
 
     SetAnimationStatus(playerid, true);
     if(style == 1)
@@ -727,7 +727,7 @@ YCMD:dance(playerid, params[], help)
    	{
    		if(IsPlayerInRangeOfPoint(i, 15.0, pos[0], pos[1], pos[2]) && GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid))
    		{
-   			format(string, sizeof(string), "** %s dances...", name);
+   			format(string, sizeof(string), "** %s กำลังเต้นรำ...", name);
 			SendClientMessage(i, GREY, string);
 		}
 	}
