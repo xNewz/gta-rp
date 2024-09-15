@@ -1961,10 +1961,10 @@ task OnVehicleUseFuel[30000]()
 
 YCMD:engine(playerid, params[], help)
 {
-	if(!IsPlayerInAnyVehicle(playerid) || GetPlayerState(playerid) != PLAYER_STATE_DRIVER) return SendClientMessage(playerid, RED, "ERROR: You must be in the drivers seat of a vehicle to toggle the engine.");
+	if(!IsPlayerInAnyVehicle(playerid) || GetPlayerState(playerid) != PLAYER_STATE_DRIVER) return SendClientMessage(playerid, RED, "ล้มเหลว: คุณต้องนั่งบนยานพาหนะเพื่อเปิดหรือปิดเครื่องยนต์.");
 
 	new vehicleid = GetPlayerVehicleID(playerid);
-	if(IsVehicleBicycle(vehicleid)) return SendClientMessage(playerid, RED, "ERROR: This bicycle does not have an engine.");
+	if(IsVehicleBicycle(vehicleid)) return SendClientMessage(playerid, RED, "ล้มเหลว: จักรยานนี้ไม่มีเครื่องยนต์.");
 
 	new engine, lights, alarm, doors, bonnet, boot, objective;
 	GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
@@ -1978,7 +1978,7 @@ YCMD:engine(playerid, params[], help)
 		{
 			if(IsPlayerInRangeOfPoint(i, 10.0, pos[0], pos[1], pos[2]))
 			{
-				format(string, sizeof(string), "** %s turns on their engine...", name);
+				format(string, sizeof(string), "** %s สตาร์ทเครื่องยนต์...", name);
 				SendClientMessage(i, GREY, string);
 			}
 		}
@@ -1994,7 +1994,7 @@ YCMD:engine(playerid, params[], help)
 		{
 			if(IsPlayerInRangeOfPoint(i, 10.0, pos[0], pos[1], pos[2]))
 			{
-				format(string, sizeof(string), "** %s turns off their engine...", name);
+				format(string, sizeof(string), "** %s ดับเครื่องยนต์...", name);
 				SendClientMessage(i, GREY, string);
 			}
 		}
