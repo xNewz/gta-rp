@@ -1,0 +1,1041 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:33:19] filterscripts = ""  (string)
+[12:33:19] 
+[12:33:19] Server Plugins
+[12:33:19] --------------
+[12:33:19]  Loading plugin: samp_bcrypt
+[12:33:19] [SampBcrypt] [info]: Version: 0.4.0
+[12:33:19]   Loaded.
+[12:33:19]  Loading plugin: sscanf
+[12:33:19] 
+[12:33:19]  ===============================
+[12:33:19] 
+[12:33:19]       sscanf plugin loaded.     
+[12:33:19] 
+[12:33:19]          Version: 2.13.8
+[12:33:19] 
+[12:33:19]    (c) 2022 Alex "Y_Less" Cole  
+[12:33:19] 
+[12:33:19]  ===============================
+[12:33:19] 
+[12:33:19]   Loaded.
+[12:33:19]  Loading plugin: streamer
+[12:33:19] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[12:33:19]   Loaded.
+[12:33:19]  Loaded 3 plugins.
+
+[12:33:19] 
+[12:33:19] Filterscripts
+[12:33:19] ---------------
+[12:33:19]   Loaded 0 filterscripts.
+
+[12:33:20] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[12:33:20]  
+[12:33:20] --------------------------------------
+[12:33:20]  Anticheat Nex-AC loaded!
+[12:33:20]  Anticheat version: 1.9.62
+[12:33:20]  Author: Nexius
+[12:33:20] --------------------------------------
+
+[12:33:20]  
+[12:33:20]  
+[12:33:20]          ==============================================================
+[12:33:20]          |                                                            |
+[12:33:20]          |                                                            |
+[12:33:20]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[12:33:20]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[12:33:20]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[12:33:20]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[12:33:20]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[12:33:20]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[12:33:20]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[12:33:20]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[12:33:20]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[12:33:20]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[12:33:20]          |           Y:::::Y                    S:::::S   I::::I      |
+[12:33:20]          |           Y:::::Y                    S:::::S   I::::I      |
+[12:33:20]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[12:33:20]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[12:33:20]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[12:33:20]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[12:33:20]          |                                                            |
+[12:33:20]          |                                                            |
+[12:33:20]          |                      (c) 2021 MPL v1.1                     |
+[12:33:20]          |            Alex "Y_Less" Cole and contributors.            |
+[12:33:20]          |                                                            |
+[12:33:20]          |                                                            |
+[12:33:20]          ==============================================================
+[12:33:20]  
+[12:33:20]  
+[12:33:20]  ========================================== 
+[12:33:20]  |                                        | 
+[12:33:20]  |  Missing YSI scriptfiles directories:  | 
+[12:33:20]  |                                        | 
+[12:33:20]  |      /scriptfiles/YSI/fixes/           | 
+[12:33:20]  |      /scriptfiles/YSI/temp/            | 
+[12:33:20]  |                                        | 
+[12:33:20]  ========================================== 
+[12:33:20]  |                                        | 
+[12:33:20]  |   Generating code, this may take a     | 
+[12:33:20]  |  little bit of time.  Note that this   | 
+[12:33:20]  |  code generation works best with the   | 
+[12:33:20]  |     JIT plugin, which you are not      | 
+[12:33:20]  |     currently using.  Get it here:     | 
+[12:33:20]  |                                        | 
+[12:33:20]  |       https://git.io/jit-plugin        | 
+[12:33:20]  |                                        | 
+[12:33:20]  |             Please wait...             | 
+[12:33:20]  |                                        | 
+[12:33:20]  |                 Done!                  | 
+[12:33:20]  |                                        | 
+[12:33:20]  ========================================== 
+[12:33:20]  |                                        | 
+[12:33:20]  | Server:      0.3.7 - Windows           | 
+[12:33:20]  | Compiler:    3.2.3664 - Windows        | 
+[12:33:20]  | Codepage:    <none>                    | 
+[12:33:20]  | YSI:         5.06.1932                 | 
+[12:33:20]  | Started:     1726378400                | 
+[12:33:20]  | JIT:         <none>                    | 
+[12:33:20]  | Crashdetect: <none>                    | 
+[12:33:20]  |                                        | 
+[12:33:20]  ========================================== 
+[12:33:20]  
+[12:33:20]   Filterscript '../scriptfiles/callbackfix.amx' loaded.
+[12:33:20] *** YSI Info: YSI Script ID: 1
+[12:33:20]  
+[12:33:20] [DOJ:RP] Successfully connected to SQLite database: scriptfiles/DOJRP/server.db
+[12:33:20] Number of vehicle models: 33
+[12:33:51] [connection] incoming connection: 127.0.0.1:51077 id: 0
+[12:33:51] [join] John_Doe has joined the server (0:127.0.0.1)
+[12:33:58] [Nex-AC debug] AC dialog: -1, dialogid: 0, listitem: -1
+[12:33:58] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:34:01] [Nex-AC debug] AC dialog: 121, dialogid: 120, listitem: 0
+[12:34:01] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:35:59] RCON (In-Game): Player #0 (Sarah_Eisenhower) has logged in.
+[12:38:32] [Nex-AC debug] AC dialog: 39, dialogid: 38, listitem: 0
+[12:38:32] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:38:43] [Nex-AC debug] AC dialog: 47, dialogid: 38, listitem: 6
+[12:38:43] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:38:45] [Nex-AC debug] AC dialog: 38, dialogid: 47, listitem: 0
+[12:38:45] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:38:51] [Nex-AC debug] AC dialog: 41, dialogid: 38, listitem: 2
+[12:38:51] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:39:00] [Nex-AC debug] AC dialog: 39, dialogid: 38, listitem: 0
+[12:39:00] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:39:04] [Nex-AC debug] AC dialog: 43, dialogid: 38, listitem: 5
+[12:39:04] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:39:13] [Nex-AC debug] AC dialog: 42, dialogid: 38, listitem: 4
+[12:39:13] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:39:14] [Nex-AC debug] AC dialog: 38, dialogid: 42, listitem: 0
+[12:39:14] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:42:46] [Nex-AC debug] AC dialog: 143, dialogid: 142, listitem: 0
+[12:42:46] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:42:48] [Nex-AC debug] AC dialog: 142, dialogid: 143, listitem: 0
+[12:42:48] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:42:50] [Nex-AC debug] AC dialog: 144, dialogid: 142, listitem: 1
+[12:42:50] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+[12:42:53] [Nex-AC debug] AC dialog: 142, dialogid: 144, listitem: 0
+[12:42:53] [Nex-AC] Suspicion on the ID 0. Reason code: 039
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:47:22] filterscripts = ""  (string)
+[12:47:22] 
+[12:47:22] Server Plugins
+[12:47:22] --------------
+[12:47:22]  Loading plugin: samp_bcrypt
+[12:47:22] [SampBcrypt] [info]: Version: 0.4.0
+[12:47:22]   Loaded.
+[12:47:22]  Loading plugin: sscanf
+[12:47:22] 
+[12:47:22]  ===============================
+[12:47:22] 
+[12:47:22]       sscanf plugin loaded.     
+[12:47:22] 
+[12:47:22]          Version: 2.13.8
+[12:47:22] 
+[12:47:22]    (c) 2022 Alex "Y_Less" Cole  
+[12:47:22] 
+[12:47:22]  ===============================
+[12:47:22] 
+[12:47:22]   Loaded.
+[12:47:22]  Loading plugin: streamer
+[12:47:22] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[12:47:22]   Loaded.
+[12:47:22]  Loaded 3 plugins.
+
+[12:47:22] 
+[12:47:22] Filterscripts
+[12:47:22] ---------------
+[12:47:22]   Loaded 0 filterscripts.
+
+[12:47:22] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[12:47:22]  
+[12:47:22] --------------------------------------
+[12:47:22]  Nex-AC loaded!
+[12:47:22]  Nex-AC version: 1.9.64
+[12:47:22]  Author: Nexius
+[12:47:22] --------------------------------------
+
+[12:47:22]  
+[12:47:22]  
+[12:47:22]          ==============================================================
+[12:47:22]          |                                                            |
+[12:47:22]          |                                                            |
+[12:47:22]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[12:47:22]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[12:47:22]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[12:47:22]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[12:47:22]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[12:47:22]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[12:47:22]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[12:47:22]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[12:47:22]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[12:47:22]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[12:47:22]          |           Y:::::Y                    S:::::S   I::::I      |
+[12:47:22]          |           Y:::::Y                    S:::::S   I::::I      |
+[12:47:22]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[12:47:22]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[12:47:22]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[12:47:22]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[12:47:22]          |                                                            |
+[12:47:22]          |                                                            |
+[12:47:22]          |                      (c) 2021 MPL v1.1                     |
+[12:47:22]          |            Alex "Y_Less" Cole and contributors.            |
+[12:47:22]          |                                                            |
+[12:47:22]          |                                                            |
+[12:47:22]          ==============================================================
+[12:47:22]  
+[12:47:22]  
+[12:47:22]  ========================================== 
+[12:47:22]  |                                        | 
+[12:47:22]  |  Missing YSI scriptfiles directories:  | 
+[12:47:22]  |                                        | 
+[12:47:22]  |      /scriptfiles/YSI/fixes/           | 
+[12:47:22]  |      /scriptfiles/YSI/temp/            | 
+[12:47:22]  |                                        | 
+[12:47:22]  ========================================== 
+[12:47:22]  |                                        | 
+[12:47:22]  |   Generating code, this may take a     | 
+[12:47:22]  |  little bit of time.  Note that this   | 
+[12:47:22]  |  code generation works best with the   | 
+[12:47:22]  |     JIT plugin, which you are not      | 
+[12:47:22]  |     currently using.  Get it here:     | 
+[12:47:22]  |                                        | 
+[12:47:22]  |       https://git.io/jit-plugin        | 
+[12:47:22]  |                                        | 
+[12:47:22]  |             Please wait...             | 
+[12:47:22]  |                                        | 
+[12:47:22]  |                 Done!                  | 
+[12:47:22]  |                                        | 
+[12:47:22]  ========================================== 
+[12:47:22]  |                                        | 
+[12:47:22]  | Server:      0.3.7 - Windows           | 
+[12:47:22]  | Compiler:    3.2.3664 - Windows        | 
+[12:47:22]  | Codepage:    <none>                    | 
+[12:47:22]  | YSI:         5.06.1932                 | 
+[12:47:22]  | Started:     1726379242                | 
+[12:47:22]  | JIT:         <none>                    | 
+[12:47:22]  | Crashdetect: <none>                    | 
+[12:47:22]  |                                        | 
+[12:47:22]  ========================================== 
+[12:47:22]  
+[12:47:22]   Filterscript '../scriptfiles/callbackfix.amx' loaded.
+[12:47:22] *** YSI Info: YSI Script ID: 1
+[12:47:22]  
+[12:47:22] [DOJ:RP] Successfully connected to SQLite database: scriptfiles/DOJRP/server.db
+[12:47:23] Number of vehicle models: 33
+[12:47:33] [connection] incoming connection: 127.0.0.1:64074 id: 0
+[12:47:33] [join] Sarah_Eisenhower has joined the server (0:127.0.0.1)
+[12:47:36] [Nex-AC debug] AC dialog: -1, dialogid: 0, listitem: -1
+[12:47:36] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[12:47:44] [Nex-AC debug] AC dialog: 121, dialogid: 120, listitem: 0
+[12:47:44] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[12:48:05] RCON (In-Game): Player #0 (Pargorn_Ruasijan) has logged in.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:52:07] filterscripts = ""  (string)
+[12:52:07] 
+[12:52:07] Server Plugins
+[12:52:07] --------------
+[12:52:07]  Loading plugin: samp_bcrypt
+[12:52:07] [SampBcrypt] [info]: Version: 0.4.0
+[12:52:07]   Loaded.
+[12:52:07]  Loading plugin: sscanf
+[12:52:07] 
+[12:52:07]  ===============================
+[12:52:07] 
+[12:52:07]       sscanf plugin loaded.     
+[12:52:07] 
+[12:52:07]          Version: 2.13.8
+[12:52:07] 
+[12:52:07]    (c) 2022 Alex "Y_Less" Cole  
+[12:52:07] 
+[12:52:07]  ===============================
+[12:52:07] 
+[12:52:07]   Loaded.
+[12:52:07]  Loading plugin: streamer
+[12:52:07] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[12:52:07]   Loaded.
+[12:52:07]  Loaded 3 plugins.
+
+[12:52:07] 
+[12:52:07] Filterscripts
+[12:52:07] ---------------
+[12:52:07]   Loaded 0 filterscripts.
+
+[12:52:07] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[12:52:07]  
+[12:52:07] --------------------------------------
+[12:52:07]  Nex-AC loaded!
+[12:52:07]  Nex-AC version: 1.9.64
+[12:52:07]  Author: Nexius
+[12:52:07] --------------------------------------
+
+[12:52:07]  
+[12:52:07]  
+[12:52:07]          ==============================================================
+[12:52:07]          |                                                            |
+[12:52:07]          |                                                            |
+[12:52:07]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[12:52:07]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[12:52:07]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[12:52:07]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[12:52:07]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[12:52:07]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[12:52:07]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[12:52:07]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[12:52:07]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[12:52:07]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[12:52:07]          |           Y:::::Y                    S:::::S   I::::I      |
+[12:52:07]          |           Y:::::Y                    S:::::S   I::::I      |
+[12:52:07]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[12:52:07]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[12:52:07]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[12:52:07]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[12:52:07]          |                                                            |
+[12:52:07]          |                                                            |
+[12:52:07]          |                      (c) 2021 MPL v1.1                     |
+[12:52:07]          |            Alex "Y_Less" Cole and contributors.            |
+[12:52:07]          |                                                            |
+[12:52:07]          |                                                            |
+[12:52:07]          ==============================================================
+[12:52:07]  
+[12:52:07]  
+[12:52:07]  ========================================== 
+[12:52:07]  |                                        | 
+[12:52:07]  |  Missing YSI scriptfiles directories:  | 
+[12:52:07]  |                                        | 
+[12:52:07]  |      /scriptfiles/YSI/fixes/           | 
+[12:52:07]  |      /scriptfiles/YSI/temp/            | 
+[12:52:07]  |                                        | 
+[12:52:07]  ========================================== 
+[12:52:07]  |                                        | 
+[12:52:07]  |   Generating code, this may take a     | 
+[12:52:07]  |  little bit of time.  Note that this   | 
+[12:52:07]  |  code generation works best with the   | 
+[12:52:07]  |     JIT plugin, which you are not      | 
+[12:52:07]  |     currently using.  Get it here:     | 
+[12:52:07]  |                                        | 
+[12:52:07]  |       https://git.io/jit-plugin        | 
+[12:52:07]  |                                        | 
+[12:52:07]  |             Please wait...             | 
+[12:52:07]  |                                        | 
+[12:52:07]  |                 Done!                  | 
+[12:52:07]  |                                        | 
+[12:52:07]  ========================================== 
+[12:52:07]  |                                        | 
+[12:52:07]  | Server:      0.3.7 - Windows           | 
+[12:52:07]  | Compiler:    3.2.3664 - Windows        | 
+[12:52:07]  | Codepage:    <none>                    | 
+[12:52:07]  | YSI:         5.06.1932                 | 
+[12:52:07]  | Started:     1726379527                | 
+[12:52:07]  | JIT:         <none>                    | 
+[12:52:07]  | Crashdetect: <none>                    | 
+[12:52:07]  |                                        | 
+[12:52:07]  ========================================== 
+[12:52:07]  
+[12:52:07]   Filterscript '../scriptfiles/callbackfix.amx' loaded.
+[12:52:07] *** YSI Info: YSI Script ID: 1
+[12:52:07]  
+[12:52:07] [DOJ:RP] Successfully connected to SQLite database: scriptfiles/DOJRP/server.db
+[12:52:07] Number of vehicle models: 33
+[12:52:09] [connection] incoming connection: 127.0.0.1:53925 id: 0
+[12:52:10] [join] Pargorn_Ruasijan has joined the server (0:127.0.0.1)
+[12:52:13] [Nex-AC debug] AC dialog: -1, dialogid: 0, listitem: -1
+[12:52:13] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[12:52:16] [Nex-AC debug] AC dialog: 121, dialogid: 120, listitem: 0
+[12:52:16] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[12:52:40] [Nex-AC debug] AC dialog: 120, dialogid: 121, listitem: -1
+[12:52:41] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[12:52:47] [Nex-AC debug] AC dialog: 121, dialogid: 120, listitem: 0
+[12:52:47] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[12:53:03] [Nex-AC debug] AC dialog: -1, dialogid: 121, listitem: -1
+[12:53:03] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[12:53:18] RCON (In-Game): Player #0 (Pargorn_Doe) has logged in.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:15:46] filterscripts = ""  (string)
+[13:15:46] 
+[13:15:46] Server Plugins
+[13:15:46] --------------
+[13:15:46]  Loading plugin: samp_bcrypt
+[13:15:46] [SampBcrypt] [info]: Version: 0.4.0
+[13:15:46]   Loaded.
+[13:15:46]  Loading plugin: sscanf
+[13:15:46] 
+[13:15:46]  ===============================
+[13:15:46] 
+[13:15:46]       sscanf plugin loaded.     
+[13:15:46] 
+[13:15:46]          Version: 2.13.8
+[13:15:46] 
+[13:15:46]    (c) 2022 Alex "Y_Less" Cole  
+[13:15:46] 
+[13:15:46]  ===============================
+[13:15:46] 
+[13:15:46]   Loaded.
+[13:15:46]  Loading plugin: streamer
+[13:15:46] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[13:15:46]   Loaded.
+[13:15:46]  Loaded 3 plugins.
+
+[13:15:46] 
+[13:15:46] Filterscripts
+[13:15:46] ---------------
+[13:15:46]   Loaded 0 filterscripts.
+
+[13:15:46] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[13:15:46]  
+[13:15:46] --------------------------------------
+[13:15:46]  Nex-AC loaded!
+[13:15:46]  Nex-AC version: 1.9.64
+[13:15:46]  Author: Nexius
+[13:15:46] --------------------------------------
+
+[13:15:46]  
+[13:15:46]  
+[13:15:46]          ==============================================================
+[13:15:46]          |                                                            |
+[13:15:46]          |                                                            |
+[13:15:46]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[13:15:46]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[13:15:46]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[13:15:46]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[13:15:46]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[13:15:46]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[13:15:46]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[13:15:46]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[13:15:46]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[13:15:46]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[13:15:46]          |           Y:::::Y                    S:::::S   I::::I      |
+[13:15:46]          |           Y:::::Y                    S:::::S   I::::I      |
+[13:15:46]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[13:15:46]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[13:15:46]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[13:15:46]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[13:15:46]          |                                                            |
+[13:15:46]          |                                                            |
+[13:15:46]          |                      (c) 2021 MPL v1.1                     |
+[13:15:46]          |            Alex "Y_Less" Cole and contributors.            |
+[13:15:46]          |                                                            |
+[13:15:46]          |                                                            |
+[13:15:46]          ==============================================================
+[13:15:46]  
+[13:15:46]  
+[13:15:46]  ========================================== 
+[13:15:46]  |                                        | 
+[13:15:46]  |  Missing YSI scriptfiles directories:  | 
+[13:15:46]  |                                        | 
+[13:15:46]  |      /scriptfiles/YSI/fixes/           | 
+[13:15:46]  |      /scriptfiles/YSI/temp/            | 
+[13:15:46]  |                                        | 
+[13:15:46]  ========================================== 
+[13:15:46]  |                                        | 
+[13:15:46]  |   Generating code, this may take a     | 
+[13:15:46]  |  little bit of time.  Note that this   | 
+[13:15:46]  |  code generation works best with the   | 
+[13:15:46]  |     JIT plugin, which you are not      | 
+[13:15:46]  |     currently using.  Get it here:     | 
+[13:15:46]  |                                        | 
+[13:15:46]  |       https://git.io/jit-plugin        | 
+[13:15:46]  |                                        | 
+[13:15:46]  |             Please wait...             | 
+[13:15:47]  |                                        | 
+[13:15:47]  |                 Done!                  | 
+[13:15:47]  |                                        | 
+[13:15:47]  ========================================== 
+[13:15:47]  |                                        | 
+[13:15:47]  | Server:      0.3.7 - Windows           | 
+[13:15:47]  | Compiler:    3.2.3664 - Windows        | 
+[13:15:47]  | Codepage:    <none>                    | 
+[13:15:47]  | YSI:         5.06.1932                 | 
+[13:15:47]  | Started:     1726380946                | 
+[13:15:47]  | JIT:         <none>                    | 
+[13:15:47]  | Crashdetect: <none>                    | 
+[13:15:47]  |                                        | 
+[13:15:47]  ========================================== 
+[13:15:47]  
+[13:15:47]   Filterscript '../scriptfiles/callbackfix.amx' loaded.
+[13:15:47] *** YSI Info: YSI Script ID: 1
+[13:15:47]  
+[13:15:47] [DOJ:RP] Successfully connected to SQLite database: scriptfiles/DOJRP/server.db
+[13:15:47] Number of vehicle models: 33
+[13:16:33] [connection] incoming connection: 127.0.0.1:64033 id: 0
+[13:16:33] [join] Pargorn_Doe has joined the server (0:127.0.0.1)
+[13:16:36] [Nex-AC debug] AC dialog: -1, dialogid: 0, listitem: -1
+[13:16:36] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:16:37] [Nex-AC debug] AC dialog: 121, dialogid: 120, listitem: 0
+[13:16:37] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:16:52] [Nex-AC debug] AC dialog: 120, dialogid: 121, listitem: -1
+[13:16:52] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:17:36] filterscripts = ""  (string)
+[13:17:36] 
+[13:17:36] Server Plugins
+[13:17:36] --------------
+[13:17:36]  Loading plugin: samp_bcrypt
+[13:17:36] [SampBcrypt] [info]: Version: 0.4.0
+[13:17:36]   Loaded.
+[13:17:36]  Loading plugin: sscanf
+[13:17:36] 
+[13:17:36]  ===============================
+[13:17:36] 
+[13:17:36]       sscanf plugin loaded.     
+[13:17:36] 
+[13:17:36]          Version: 2.13.8
+[13:17:36] 
+[13:17:36]    (c) 2022 Alex "Y_Less" Cole  
+[13:17:36] 
+[13:17:36]  ===============================
+[13:17:36] 
+[13:17:36]   Loaded.
+[13:17:36]  Loading plugin: streamer
+[13:17:36] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[13:17:36]   Loaded.
+[13:17:36]  Loaded 3 plugins.
+
+[13:17:36] 
+[13:17:36] Filterscripts
+[13:17:36] ---------------
+[13:17:36]   Loaded 0 filterscripts.
+
+[13:17:36] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[13:17:36]  
+[13:17:36] --------------------------------------
+[13:17:36]  Nex-AC loaded!
+[13:17:36]  Nex-AC version: 1.9.64
+[13:17:36]  Author: Nexius
+[13:17:36] --------------------------------------
+
+[13:17:36]  
+[13:17:36]  
+[13:17:36]          ==============================================================
+[13:17:36]          |                                                            |
+[13:17:36]          |                                                            |
+[13:17:36]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[13:17:36]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[13:17:36]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[13:17:36]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[13:17:36]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[13:17:36]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[13:17:36]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[13:17:36]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[13:17:36]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[13:17:36]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[13:17:36]          |           Y:::::Y                    S:::::S   I::::I      |
+[13:17:36]          |           Y:::::Y                    S:::::S   I::::I      |
+[13:17:36]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[13:17:36]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[13:17:36]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[13:17:36]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[13:17:36]          |                                                            |
+[13:17:36]          |                                                            |
+[13:17:36]          |                      (c) 2021 MPL v1.1                     |
+[13:17:36]          |            Alex "Y_Less" Cole and contributors.            |
+[13:17:36]          |                                                            |
+[13:17:36]          |                                                            |
+[13:17:36]          ==============================================================
+[13:17:36]  
+[13:17:36]  
+[13:17:36]  ========================================== 
+[13:17:36]  |                                        | 
+[13:17:36]  |  Missing YSI scriptfiles directories:  | 
+[13:17:36]  |                                        | 
+[13:17:36]  |      /scriptfiles/YSI/fixes/           | 
+[13:17:36]  |      /scriptfiles/YSI/temp/            | 
+[13:17:36]  |                                        | 
+[13:17:36]  ========================================== 
+[13:17:36]  |                                        | 
+[13:17:36]  |   Generating code, this may take a     | 
+[13:17:36]  |  little bit of time.  Note that this   | 
+[13:17:36]  |  code generation works best with the   | 
+[13:17:36]  |     JIT plugin, which you are not      | 
+[13:17:36]  |     currently using.  Get it here:     | 
+[13:17:36]  |                                        | 
+[13:17:36]  |       https://git.io/jit-plugin        | 
+[13:17:36]  |                                        | 
+[13:17:36]  |             Please wait...             | 
+[13:17:36]  |                                        | 
+[13:17:36]  |                 Done!                  | 
+[13:17:36]  |                                        | 
+[13:17:36]  ========================================== 
+[13:17:36]  |                                        | 
+[13:17:36]  | Server:      0.3.7 - Windows           | 
+[13:17:36]  | Compiler:    3.2.3664 - Windows        | 
+[13:17:36]  | Codepage:    <none>                    | 
+[13:17:36]  | YSI:         5.06.1932                 | 
+[13:17:36]  | Started:     1726381056                | 
+[13:17:36]  | JIT:         <none>                    | 
+[13:17:36]  | Crashdetect: <none>                    | 
+[13:17:36]  |                                        | 
+[13:17:36]  ========================================== 
+[13:17:36]  
+[13:17:36]   Filterscript '../scriptfiles/callbackfix.amx' loaded.
+[13:17:36] *** YSI Info: YSI Script ID: 1
+[13:17:36]  
+[13:17:36] [DOJ:RP] Successfully connected to SQLite database: scriptfiles/DOJRP/server.db
+[13:17:36] Number of vehicle models: 33
+[13:17:41] [connection] incoming connection: 127.0.0.1:49773 id: 0
+[13:17:48] [join] Pargorn_Ruasijan has joined the server (0:127.0.0.1)
+[13:17:51] [Nex-AC debug] AC dialog: -1, dialogid: 1, listitem: -1
+[13:17:51] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:17:52] [Nex-AC debug] AC dialog: 121, dialogid: 120, listitem: 0
+[13:17:52] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:17:54] [Nex-AC debug] AC dialog: 120, dialogid: 121, listitem: -1
+[13:17:54] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:17:54] [Nex-AC debug] AC dialog: 122, dialogid: 120, listitem: 1
+[13:17:54] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:21:49] filterscripts = ""  (string)
+[13:21:49] 
+[13:21:49] Server Plugins
+[13:21:49] --------------
+[13:21:49]  Loading plugin: samp_bcrypt
+[13:21:49] [SampBcrypt] [info]: Version: 0.4.0
+[13:21:49]   Loaded.
+[13:21:49]  Loading plugin: sscanf
+[13:21:49] 
+[13:21:49]  ===============================
+[13:21:49] 
+[13:21:49]       sscanf plugin loaded.     
+[13:21:49] 
+[13:21:49]          Version: 2.13.8
+[13:21:49] 
+[13:21:49]    (c) 2022 Alex "Y_Less" Cole  
+[13:21:49] 
+[13:21:49]  ===============================
+[13:21:49] 
+[13:21:49]   Loaded.
+[13:21:49]  Loading plugin: streamer
+[13:21:49] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[13:21:49]   Loaded.
+[13:21:49]  Loaded 3 plugins.
+
+[13:21:49] 
+[13:21:49] Filterscripts
+[13:21:49] ---------------
+[13:21:49]   Loaded 0 filterscripts.
+
+[13:21:50] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[13:21:50]  
+[13:21:50] --------------------------------------
+[13:21:50]  Nex-AC loaded!
+[13:21:50]  Nex-AC version: 1.9.64
+[13:21:50]  Author: Nexius
+[13:21:50] --------------------------------------
+
+[13:21:50]  
+[13:21:50]  
+[13:21:50]          ==============================================================
+[13:21:50]          |                                                            |
+[13:21:50]          |                                                            |
+[13:21:50]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[13:21:50]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[13:21:50]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[13:21:50]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[13:21:50]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[13:21:50]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[13:21:50]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[13:21:50]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[13:21:50]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[13:21:50]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[13:21:50]          |           Y:::::Y                    S:::::S   I::::I      |
+[13:21:50]          |           Y:::::Y                    S:::::S   I::::I      |
+[13:21:50]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[13:21:50]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[13:21:50]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[13:21:50]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[13:21:50]          |                                                            |
+[13:21:50]          |                                                            |
+[13:21:50]          |                      (c) 2021 MPL v1.1                     |
+[13:21:50]          |            Alex "Y_Less" Cole and contributors.            |
+[13:21:50]          |                                                            |
+[13:21:50]          |                                                            |
+[13:21:50]          ==============================================================
+[13:21:50]  
+[13:21:50]  
+[13:21:50]  ========================================== 
+[13:21:50]  |                                        | 
+[13:21:50]  |  Missing YSI scriptfiles directories:  | 
+[13:21:50]  |                                        | 
+[13:21:50]  |      /scriptfiles/YSI/fixes/           | 
+[13:21:50]  |      /scriptfiles/YSI/temp/            | 
+[13:21:50]  |                                        | 
+[13:21:50]  ========================================== 
+[13:21:50]  |                                        | 
+[13:21:50]  |   Generating code, this may take a     | 
+[13:21:50]  |  little bit of time.  Note that this   | 
+[13:21:50]  |  code generation works best with the   | 
+[13:21:50]  |     JIT plugin, which you are not      | 
+[13:21:50]  |     currently using.  Get it here:     | 
+[13:21:50]  |                                        | 
+[13:21:50]  |       https://git.io/jit-plugin        | 
+[13:21:50]  |                                        | 
+[13:21:50]  |             Please wait...             | 
+[13:21:50]  |                                        | 
+[13:21:50]  |                 Done!                  | 
+[13:21:50]  |                                        | 
+[13:21:50]  ========================================== 
+[13:21:50]  |                                        | 
+[13:21:50]  | Server:      0.3.7 - Windows           | 
+[13:21:50]  | Compiler:    3.2.3664 - Windows        | 
+[13:21:50]  | Codepage:    <none>                    | 
+[13:21:50]  | YSI:         5.06.1932                 | 
+[13:21:50]  | Started:     1726381310                | 
+[13:21:50]  | JIT:         <none>                    | 
+[13:21:50]  | Crashdetect: <none>                    | 
+[13:21:50]  |                                        | 
+[13:21:50]  ========================================== 
+[13:21:50]  
+[13:21:50]   Filterscript '../scriptfiles/callbackfix.amx' loaded.
+[13:21:50] *** YSI Info: YSI Script ID: 1
+[13:21:50]  
+[13:21:50] [DOJ:RP] Successfully connected to SQLite database: scriptfiles/DOJRP/server.db
+[13:21:50] Number of vehicle models: 33
+[13:21:58] [connection] incoming connection: 127.0.0.1:61156 id: 0
+[13:21:58] [join] Pargorn_Doe has joined the server (0:127.0.0.1)
+[13:22:02] [Nex-AC debug] AC dialog: -1, dialogid: 1, listitem: -1
+[13:22:02] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:22:03] [Nex-AC debug] AC dialog: 121, dialogid: 120, listitem: 0
+[13:22:03] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:22:04] [Nex-AC debug] AC dialog: 120, dialogid: 121, listitem: -1
+[13:22:04] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:22:46] filterscripts = ""  (string)
+[13:22:46] 
+[13:22:46] Server Plugins
+[13:22:46] --------------
+[13:22:46]  Loading plugin: samp_bcrypt
+[13:22:46] [SampBcrypt] [info]: Version: 0.4.0
+[13:22:46]   Loaded.
+[13:22:46]  Loading plugin: sscanf
+[13:22:46] 
+[13:22:46]  ===============================
+[13:22:46] 
+[13:22:46]       sscanf plugin loaded.     
+[13:22:46] 
+[13:22:46]          Version: 2.13.8
+[13:22:46] 
+[13:22:46]    (c) 2022 Alex "Y_Less" Cole  
+[13:22:46] 
+[13:22:46]  ===============================
+[13:22:46] 
+[13:22:46]   Loaded.
+[13:22:46]  Loading plugin: streamer
+[13:22:46] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[13:22:46]   Loaded.
+[13:22:46]  Loaded 3 plugins.
+
+[13:22:46] 
+[13:22:46] Filterscripts
+[13:22:46] ---------------
+[13:22:46]   Loaded 0 filterscripts.
+
+[13:22:46] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[13:22:46]  
+[13:22:46] --------------------------------------
+[13:22:46]  Nex-AC loaded!
+[13:22:46]  Nex-AC version: 1.9.64
+[13:22:46]  Author: Nexius
+[13:22:46] --------------------------------------
+
+[13:22:46]  
+[13:22:46]  
+[13:22:46]          ==============================================================
+[13:22:46]          |                                                            |
+[13:22:46]          |                                                            |
+[13:22:46]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[13:22:46]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[13:22:46]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[13:22:46]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[13:22:46]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[13:22:46]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[13:22:46]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[13:22:46]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[13:22:46]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[13:22:46]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[13:22:46]          |           Y:::::Y                    S:::::S   I::::I      |
+[13:22:46]          |           Y:::::Y                    S:::::S   I::::I      |
+[13:22:46]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[13:22:46]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[13:22:46]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[13:22:46]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[13:22:46]          |                                                            |
+[13:22:46]          |                                                            |
+[13:22:46]          |                      (c) 2021 MPL v1.1                     |
+[13:22:46]          |            Alex "Y_Less" Cole and contributors.            |
+[13:22:46]          |                                                            |
+[13:22:46]          |                                                            |
+[13:22:46]          ==============================================================
+[13:22:46]  
+[13:22:46]  
+[13:22:46]  ========================================== 
+[13:22:46]  |                                        | 
+[13:22:46]  |  Missing YSI scriptfiles directories:  | 
+[13:22:46]  |                                        | 
+[13:22:46]  |      /scriptfiles/YSI/fixes/           | 
+[13:22:46]  |      /scriptfiles/YSI/temp/            | 
+[13:22:46]  |                                        | 
+[13:22:46]  ========================================== 
+[13:22:46]  |                                        | 
+[13:22:46]  |   Generating code, this may take a     | 
+[13:22:46]  |  little bit of time.  Note that this   | 
+[13:22:46]  |  code generation works best with the   | 
+[13:22:46]  |     JIT plugin, which you are not      | 
+[13:22:46]  |     currently using.  Get it here:     | 
+[13:22:46]  |                                        | 
+[13:22:46]  |       https://git.io/jit-plugin        | 
+[13:22:46]  |                                        | 
+[13:22:46]  |             Please wait...             | 
+[13:22:46]  |                                        | 
+[13:22:46]  |                 Done!                  | 
+[13:22:46]  |                                        | 
+[13:22:46]  ========================================== 
+[13:22:46]  |                                        | 
+[13:22:46]  | Server:      0.3.7 - Windows           | 
+[13:22:46]  | Compiler:    3.2.3664 - Windows        | 
+[13:22:46]  | Codepage:    <none>                    | 
+[13:22:46]  | YSI:         5.06.1932                 | 
+[13:22:46]  | Started:     1726381366                | 
+[13:22:46]  | JIT:         <none>                    | 
+[13:22:46]  | Crashdetect: <none>                    | 
+[13:22:46]  |                                        | 
+[13:22:46]  ========================================== 
+[13:22:46]  
+[13:22:46]   Filterscript '../scriptfiles/callbackfix.amx' loaded.
+[13:22:46] *** YSI Info: YSI Script ID: 1
+[13:22:46]  
+[13:22:47] [DOJ:RP] Successfully connected to SQLite database: scriptfiles/DOJRP/server.db
+[13:22:47] Number of vehicle models: 33
+[13:22:48] [connection] incoming connection: 127.0.0.1:58919 id: 0
+[13:22:48] [join] Pargorn_Doe has joined the server (0:127.0.0.1)
+[13:22:50] [Nex-AC debug] AC dialog: -1, dialogid: 1, listitem: -1
+[13:22:50] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:23:02] filterscripts = ""  (string)
+[13:23:02] 
+[13:23:02] Server Plugins
+[13:23:02] --------------
+[13:23:02]  Loading plugin: samp_bcrypt
+[13:23:02] [SampBcrypt] [info]: Version: 0.4.0
+[13:23:02]   Loaded.
+[13:23:02]  Loading plugin: sscanf
+[13:23:02] 
+[13:23:02]  ===============================
+[13:23:02] 
+[13:23:02]       sscanf plugin loaded.     
+[13:23:02] 
+[13:23:02]          Version: 2.13.8
+[13:23:02] 
+[13:23:02]    (c) 2022 Alex "Y_Less" Cole  
+[13:23:02] 
+[13:23:02]  ===============================
+[13:23:02] 
+[13:23:02]   Loaded.
+[13:23:02]  Loading plugin: streamer
+[13:23:02] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[13:23:02]   Loaded.
+[13:23:02]  Loaded 3 plugins.
+
+[13:23:02] 
+[13:23:02] Filterscripts
+[13:23:02] ---------------
+[13:23:02]   Loaded 0 filterscripts.
+
+[13:23:03] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[13:23:03]  
+[13:23:03] --------------------------------------
+[13:23:03]  Nex-AC loaded!
+[13:23:03]  Nex-AC version: 1.9.64
+[13:23:03]  Author: Nexius
+[13:23:03] --------------------------------------
+
+[13:23:03]  
+[13:23:03]  
+[13:23:03]          ==============================================================
+[13:23:03]          |                                                            |
+[13:23:03]          |                                                            |
+[13:23:03]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[13:23:03]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[13:23:03]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[13:23:03]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[13:23:03]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[13:23:03]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[13:23:03]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[13:23:03]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[13:23:03]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[13:23:03]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[13:23:03]          |           Y:::::Y                    S:::::S   I::::I      |
+[13:23:03]          |           Y:::::Y                    S:::::S   I::::I      |
+[13:23:03]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[13:23:03]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[13:23:03]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[13:23:03]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[13:23:03]          |                                                            |
+[13:23:03]          |                                                            |
+[13:23:03]          |                      (c) 2021 MPL v1.1                     |
+[13:23:03]          |            Alex "Y_Less" Cole and contributors.            |
+[13:23:03]          |                                                            |
+[13:23:03]          |                                                            |
+[13:23:03]          ==============================================================
+[13:23:03]  
+[13:23:03]  
+[13:23:03]  ========================================== 
+[13:23:03]  |                                        | 
+[13:23:03]  |  Missing YSI scriptfiles directories:  | 
+[13:23:03]  |                                        | 
+[13:23:03]  |      /scriptfiles/YSI/fixes/           | 
+[13:23:03]  |      /scriptfiles/YSI/temp/            | 
+[13:23:03]  |                                        | 
+[13:23:03]  ========================================== 
+[13:23:03]  |                                        | 
+[13:23:03]  |   Generating code, this may take a     | 
+[13:23:03]  |  little bit of time.  Note that this   | 
+[13:23:03]  |  code generation works best with the   | 
+[13:23:03]  |     JIT plugin, which you are not      | 
+[13:23:03]  |     currently using.  Get it here:     | 
+[13:23:03]  |                                        | 
+[13:23:03]  |       https://git.io/jit-plugin        | 
+[13:23:03]  |                                        | 
+[13:23:03]  |             Please wait...             | 
+[13:23:03]  |                                        | 
+[13:23:03]  |                 Done!                  | 
+[13:23:03]  |                                        | 
+[13:23:03]  ========================================== 
+[13:23:03]  |                                        | 
+[13:23:03]  | Server:      0.3.7 - Windows           | 
+[13:23:03]  | Compiler:    3.2.3664 - Windows        | 
+[13:23:03]  | Codepage:    <none>                    | 
+[13:23:03]  | YSI:         5.06.1932                 | 
+[13:23:03]  | Started:     1726381383                | 
+[13:23:03]  | JIT:         <none>                    | 
+[13:23:03]  | Crashdetect: <none>                    | 
+[13:23:03]  |                                        | 
+[13:23:03]  ========================================== 
+[13:23:03]  
+[13:23:03]   Filterscript '../scriptfiles/callbackfix.amx' loaded.
+[13:23:03] *** YSI Info: YSI Script ID: 1
+[13:23:03]  
+[13:23:03] [DOJ:RP] Successfully connected to SQLite database: scriptfiles/DOJRP/server.db
+[13:23:03] Number of vehicle models: 33
+[13:23:22] [connection] incoming connection: 127.0.0.1:58920 id: 0
+[13:23:22] [join] Pargorn_Ruasijan has joined the server (0:127.0.0.1)
+[13:23:25] [Nex-AC debug] AC dialog: -1, dialogid: 1, listitem: -1
+[13:23:25] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:23:27] [Nex-AC debug] AC dialog: 122, dialogid: 120, listitem: 1
+[13:23:27] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:24:23] RCON (In-Game): Player #0 (Pargorn_Doe) has logged in.
+[13:25:59] [Nex-AC debug] AC dialog: 103, dialogid: 48, listitem: 1
+[13:25:59] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:26:01] [Nex-AC debug] AC dialog: 105, dialogid: 103, listitem: 1
+[13:26:01] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:26:06] [Nex-AC debug] AC dialog: 103, dialogid: 105, listitem: 0
+[13:26:06] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:26:11] [Nex-AC debug] AC dialog: 105, dialogid: 103, listitem: 1
+[13:26:11] [Nex-AC] ID 0 appears suspicious. Reason code: 039
+[13:31:27] [part] Pargorn_Ruasijan has left the server (0:1)
