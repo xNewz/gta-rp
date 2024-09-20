@@ -1534,11 +1534,29 @@ YCMD:giveweapon(playerid, params[], help)
 	return GivePlayerWeapon(targetid, weapon, ammo);
 }
 
-YCMD:gotols(playerid, params[])
+YCMD:gotols(playerid, params[], help)
 {
 	if(GetPlayerLevel(playerid) < ADMIN) return SendClientMessage(playerid, RED, "ล้มเหลว: คำสั่งนี้ถูกจำกัดไว้สำหรับผู้ดูแลและขึ้นไป.");
     SetPlayerPos(playerid,1529.6, -1691.2, 13.3);
 	SetPlayerInterior(playerid, 0);
 	SetPlayerVirtualWorld(playerid, 0);
-    return SendClientMessage(playerid, GREEN, "คุณได้ย้ายไปยัง Los Santos แล้ว");
+    return SendClientMessage(playerid, GREEN, "ระบบ: คุณได้ย้ายไปยัง Los Santos แล้ว");
+}
+
+YCMD:gotosf(playerid, params[], help)
+{
+	if(GetPlayerLevel(playerid) < ADMIN) return SendClientMessage(playerid, RED, "ล้มเหลว: คำสั่งนี้ถูกจำกัดไว้สำหรับผู้ดูแลและขึ้นไป.");
+    SetPlayerPos(playerid, 1973.3322, 138.0420, 27.6875);
+	SetPlayerInterior(playerid, 0);
+	SetPlayerVirtualWorld(playerid, 0);
+    return SendClientMessage(playerid, GREEN, "ระบบ: คุณได้ย้ายไปยัง San Fierro แล้ว");
+}
+
+YCMD:gotolv(playerid, params[], help)
+{
+	if(GetPlayerLevel(playerid) < ADMIN) return SendClientMessage(playerid, RED, "ล้มเหลว: คำสั่งนี้ถูกจำกัดไว้สำหรับผู้ดูแลและขึ้นไป.");
+    SetPlayerPos(playerid, 1699.2, 1435.1, 10.7);
+	SetPlayerInterior(playerid, 0);
+	SetPlayerVirtualWorld(playerid, 0);
+    return SendClientMessage(playerid, GREEN, "ระบบ: คุณได้ย้ายไปยัง Las Venturas แล้ว");
 }
