@@ -1533,3 +1533,12 @@ YCMD:giveweapon(playerid, params[], help)
 	SendClientMessage(playerid, YELLOW, string);
 	return GivePlayerWeapon(targetid, weapon, ammo);
 }
+
+YCMD:gotols(playerid, params[])
+{
+	if(GetPlayerLevel(playerid) < ADMIN) return SendClientMessage(playerid, RED, "ล้มเหลว: คำสั่งนี้ถูกจำกัดไว้สำหรับผู้ดูแลและขึ้นไป.");
+    SetPlayerPos(playerid,1529.6, -1691.2, 13.3);
+	SetPlayerInterior(playerid, 0);
+	SetPlayerVirtualWorld(playerid, 0);
+    return SendClientMessage(playerid, GREEN, "คุณได้ย้ายไปยัง Los Santos แล้ว");
+}
