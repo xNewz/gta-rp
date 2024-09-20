@@ -16,7 +16,7 @@
 
 #define DATABASE_LOCATION "DOJRP/server.db"//This is the location of the SQLite database. (Default: scriptfiles/DOJRP/server.db)
 
-#define SERVER_TAG "DOJ:RP"//This will show on global vehicle number plates, gamemode text, and some dialogs. (Default: DOJ:RP)
+#define SERVER_TAG "NT:RP"//This will show on global vehicle number plates, gamemode text, and some dialogs. (Default: DOJ:RP)
 
 #define MAP_NAME "mapname San Andreas"//This will show on the client's server list. (Default: San Andreas)
 #define SERVER_LANG "language English"//This will show on the client's server list. (Default: English)
