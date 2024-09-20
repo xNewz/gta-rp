@@ -1546,7 +1546,7 @@ YCMD:gotols(playerid, params[], help)
 YCMD:gotosf(playerid, params[], help)
 {
 	if(GetPlayerLevel(playerid) < ADMIN) return SendClientMessage(playerid, RED, "ล้มเหลว: คำสั่งนี้ถูกจำกัดไว้สำหรับผู้ดูแลและขึ้นไป.");
-    SetPlayerPos(playerid, -1930.3608, 198.0463, 25.6393);
+    SetPlayerPos(playerid, -1422.7832, -288.7293, 14.1484);
 	SetPlayerInterior(playerid, 0);
 	SetPlayerVirtualWorld(playerid, 0);
     return SendClientMessage(playerid, GREEN, "ระบบ: คุณได้ย้ายไปยัง San Fierro แล้ว");
